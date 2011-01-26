@@ -1,16 +1,16 @@
 ---
+
 layout: default
+title: Michal Wrobel - Ruby on Rails developer,  life enthusiast.
+
 ---
 
-<div id="post">
-{{ content }}
-</div>
-
-<div id="related">
-  <h2>Related Posts</h2>
+<div id="home">
+  <h1>Blog Posts</h1>
   <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
+    {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
+
